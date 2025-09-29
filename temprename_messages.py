@@ -24,7 +24,7 @@ class Command(str, Enum):
     POWER_ON    = "POWER_ON"
     POWER_OFF   = "POWER_OFF"
     GET_CHANNELS= "GET_CHANNELS"
-    SET_CHANNEL= "SET_CHANNELS"    # Expects 1 int arg
+    SET_CHANNEL= "SET_CHANNEL"    # Expects 1 int arg
     CHANNEL_UP  = "CHANNEL_UP"
     CHANNEL_DOWN= "CHANNEL_DOWN"
     GET_STATUS  = "GET_STATUS"      # debugging

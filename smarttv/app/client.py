@@ -26,7 +26,6 @@ with socket.socket() as s:
     s.connect((args.host, args.port))
     print(f"Connected to {args.host}:{args.port}")
 
-    # Optional: read server banner
     banner = recv_line(s)
     if banner:
         print(banner.decode("utf-8").rstrip())

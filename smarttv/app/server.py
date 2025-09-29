@@ -1,8 +1,14 @@
 # server.py
 import socket
 import argparse
-from messages import parse_line, ProtocolError, InvalidArgumentError, UnknownCommandError
-from smart_tv import SmartTV
+# from messages import parse_line, ProtocolError, InvalidArgumentError, UnknownCommandError
+from ..protocol.commands import Command
+from ..protocol.message import Message, TERMINATOR
+from ..protocol.parser import parse_line, build
+from ..protocol.renderer import render_reply, render_error
+from ..protocol.errors import ProtocolError, UnknownCommandError, InvalidArgumentError
+
+from ..domain.smart_tv import SmartTV
 
 TERMINATOR = b"\n"
 

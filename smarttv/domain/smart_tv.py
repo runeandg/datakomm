@@ -1,4 +1,5 @@
-from messages import Command, render_reply, render_error
+from ..protocol.commands import Command
+from ..protocol.renderer import render_reply, render_error
 
 class SmartTV:
     def __init__(self) -> None:
