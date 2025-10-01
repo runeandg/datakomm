@@ -52,7 +52,7 @@ def main():
             c, addr = s.accept()
             print("Got connection from", addr)
             with c:
-                # optional greeting
+                # optional greeting when connecting
                 send_line(c, "WELCOME SmartTV. Type commands, e.g. POWER_ON, GET_CHANNELS, SET_CHANNELS 2, CHANNEL_UP, GET_STATUS, QUIT")
                 while True:
                     line = recv_line(c)

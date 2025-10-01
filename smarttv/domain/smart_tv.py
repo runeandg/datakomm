@@ -4,7 +4,7 @@ from ..protocol.renderer import render_reply, render_error
 class SmartTV:
     def __init__(self) -> None:
         self.on = False
-        self.channels = ["NRK1", "NRK2", "TV2", "TV3", "Styven", "ITV2304"]
+        self.channels = ["NRK1", "NRK2", "TV2", "TV3", "Styv1", "ITV2304"]
         self.idx = 0 # Current channel index
 
     def handle(self, cmd: Command, args):
