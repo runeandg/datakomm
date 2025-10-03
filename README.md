@@ -11,7 +11,8 @@ First grab the repo with git clone, then run the following commands in your term
 `python -m smarttv.app.client <port, default=1238>` to connect to the server.
 
 # Available commands:
-# Friendly aliases (case-insensitive at parse time)
+All commands are case-insensitive.
+
 To turn the SmartTV on: write either of the following: `on`, `turn_on`, `power_on`.
 
 To turn the SmartTV off: `off`, `turn_off`, `power_off`.
